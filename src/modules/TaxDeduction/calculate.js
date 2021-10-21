@@ -21,5 +21,5 @@ export const calculate = (params, setResult) => {
   console.log('в месяц ', maxDeduction / taxPerYear);
   console.log('итог ', result);
 
-  setResult({ ...params, calculated: maxDeduction / months });
+  setResult({ ...params, calculated: result });
 };

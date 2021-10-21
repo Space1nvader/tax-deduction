@@ -2,13 +2,14 @@ import React from 'react';
 import Checkbox from 'components/Checkbox/index';
 import './index.scss';
 
-const TaxOption = () => (
+const TaxOption = (props) => {
+  const { name, value, index } = props;
   <div className="taxOption">
-    <Checkbox name="checkbox">
-      <span className="taxOption__value">78 000 рублей</span>
-      <span className="taxOption__info"> в 1-ый год</span>
+    <Checkbox name={name}>
+      <span className="taxOption__value">{value} рублей</span>
+      <span className="taxOption__info"> в {index}-ый год</span>
     </Checkbox>
-  </div>
-);
+  </div>;
+};
 
 export default TaxOption;
