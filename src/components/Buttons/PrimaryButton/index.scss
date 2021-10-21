@@ -1,11 +1,12 @@
 .primaryButton {
-  width: 210px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background: transparent;
-  font-size: 1rem;
+  min-width: 9.375rem;
+  height: 2.5rem;
+  font-size: 0.75rem;
   padding: 1rem;
   line-height: 1.5;
   font-weight: 500;
@@ -21,5 +22,13 @@
   }
   &:disabled {
     background-color: var(--disabled);
+  }
+}
+
+@media (min-width: 768px) {
+  .primaryButton {
+    min-width: 13.125rem;
+    height: 3.5rem;
+    font-size: 1rem;
   }
 }

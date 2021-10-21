@@ -1,0 +1,17 @@
+.closeButton {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+@media (min-width: 768px) {
+  .closeButton > svg {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}

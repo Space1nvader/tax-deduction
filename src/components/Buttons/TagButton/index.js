@@ -2,13 +2,13 @@ import React from 'react';
 import clsx from 'clsx';
 import './index.scss';
 
-const TextButton = (props) => {
-  const { type = 'button', className = '', children = 'Кнопка', ...other } = props;
+const TagButton = (props) => {
+  const { className = '', children = 'Кнопка', ...other } = props;
   return (
     <button
-      className={clsx('textButton', className)}
+      className={clsx('tagButton', className)}
       // eslint-disable-next-line react/button-has-type
-      type={type}
+      type="button"
       {...other}
     >
       {children}
@@ -16,4 +16,4 @@ const TextButton = (props) => {
   );
 };
 
-export default TextButton;
+export default TagButton;

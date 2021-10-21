@@ -1,0 +1,40 @@
+.field {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+  &__label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.7;
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+  }
+  &__input {
+    width: 100%;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    border: 1px solid #dfe3e6;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+    color: var(--default);
+    &:hover {
+      border-color: var(--default);
+    }
+    &.error {
+      border-color: var(--error);
+    }
+  }
+  &__error {
+    display: none;
+    padding-top: 6px;
+    order: 3;
+    width: 100%;
+    // position: absolute;
+    color: var(--error);
+    font-size: 0.625rem;
+    line-height: 1.2;
+  }
+}

@@ -1,11 +1,14 @@
 @import '../fonts/fonts.scss';
+@import './keyframes.scss';
 
 :root {
   --font: 'Lab Grotesque', sans-serif;
   --accent: #ea0029;
   --text: #808080;
   --disabled: #bec5cc;
+  --border: #dfe3e6;
   --default: #000000;
+  --error: #ea0029;
   --bgc: rgba(0, 0, 0, 0.3);
   --lightGray: #eef0f2;
   --main-gradient: linear-gradient(255.35deg, #dc3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #ff5e56;
@@ -19,14 +22,19 @@ html {
   padding: 0;
   margin: 0;
 }
-a {
-  text-decoration: none;
-}
+
 body {
   font-family: var(--font);
   cursor: default;
   color: var(--default);
   background: var(--main-gradient);
+}
+a {
+  text-decoration: none;
+}
+p {
+  color: var(--text);
+  line-height: 1.33;
 }
 section {
   position: relative;
@@ -51,11 +59,11 @@ input {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: var(--text);
+  color: var(--disabled);
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: var(--text);
+  color: var(--disabled);
 }
 
 button {
@@ -72,28 +80,25 @@ input {
     transition: background-color 5000s ease-in-out 0s;
   }
 }
-h1 {
-  font-size: 6rem;
-  letter-spacing: -0.026em;
-}
-h2 {
-  font-size: 3.75rem;
-  letter-spacing: -0.025em;
+// убирает выделение текста при клике на лейбл
+label {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 h3 {
-  font-size: 3rem;
-  letter-spacing: -0.01em;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
 }
-h4 {
-  font-size: 2.125rem;
-  font-weight: 600;
-}
-h5 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1.5;
-}
-h6 {
-  font-size: 1.25rem;
-  letter-spacing: 0.0075em;
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+  p {
+    line-height: 1.7;
+  }
 }

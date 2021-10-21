@@ -3,10 +3,10 @@ import clsx from 'clsx';
 import './index.scss';
 
 const DefaultButton = (props) => {
-  const { type = 'button', classes = '', children = 'Кнопка', ...other } = props;
+  const { type = 'button', className = '', children = 'Кнопка', ...other } = props;
   return (
     <button
-      className={clsx('defaultButton', classes && classes)}
+      className={clsx('defaultButton', className)}
       // eslint-disable-next-line react/button-has-type
       type={type}
       {...other}
