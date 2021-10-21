@@ -10,6 +10,7 @@ import './index.scss';
 const TaxDeduction = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [optionsOpen, setOptionsOpen] = useState(false);
+  const [activeParam, setActiveParam] = useState(0);
   const handleOpenModal = () => {
     setModalOpen(true);
   };
@@ -42,7 +43,7 @@ const TaxDeduction = () => {
                   Рассчитать
                 </TextButton>
                 {optionsOpen && <TaxOptions />}
-                <TaxParams />
+                <TaxParams active={activeParam} setActiveParam={setActiveParam} />
                 <DefaultButton className="taxDeduction__submit">Добавить</DefaultButton>
               </div>
             </div>

@@ -30,7 +30,8 @@
 @media (min-width: 1440px) {
   .taxParams {
     &__subTitle {
-      width: 35%;
+      width: auto;
+      margin-right: 2rem;
     }
   }
 }

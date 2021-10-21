@@ -45,3 +45,10 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .ReactModal {
+    &__Content {
+      width: 34.5rem;
+    }
+  }
+}

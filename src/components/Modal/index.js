@@ -4,6 +4,8 @@ import { CloseButton } from 'components/Buttons';
 import { coreStyle } from './style';
 import './style.scss';
 
+ReactModal.setAppElement(document.body);
+
 const Modal = (props) => {
   const { modalOpen, handleClose, children } = props;
   return (
