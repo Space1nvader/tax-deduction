@@ -1,0 +1,25 @@
+.primaryButton {
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  font-size: 1rem;
+  padding: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  border: 1px solid #fff;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+  &:active,
+  &:hover {
+    background-color: #fff;
+    color: var(--default);
+  }
+  &:disabled {
+    background-color: var(--disabled);
+  }
+}
