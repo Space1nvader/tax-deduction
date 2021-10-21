@@ -26,10 +26,14 @@
     }
     &.error {
       border-color: var(--error);
+      & ~ label {
+        display: block;
+      }
     }
   }
   &__error {
     display: none;
+    animation: fadeIn 0.2s forwards;
     padding-top: 6px;
     order: 3;
     width: 100%;

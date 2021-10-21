@@ -3,7 +3,7 @@
     display: none;
     &:checked ~ label {
       &::after {
-        outline: none;
+        border-color: transparent;
       }
       &::before {
         opacity: 1;
@@ -29,7 +29,7 @@
     }
     &::after {
       z-index: 1;
-      outline: 1px solid var(--border);
+      border: 1px solid var(--border);
       background-image: url(../../assets/icons/checked-icon.svg);
       background-position: center center;
       background-size: auto;

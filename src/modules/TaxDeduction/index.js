@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Wrapper from 'components/Layout/Wrapper/';
 import { PrimaryButton } from 'components/Buttons';
 import Modal from 'components/Modal';
-import './index.scss';
 import TaxBody from './components/TaxBody';
+import './index.scss';
 
 const TaxDeduction = () => {
   const [modalOpen, setModalOpen] = useState(false);

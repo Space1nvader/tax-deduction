@@ -10,16 +10,11 @@ export const calculate = (params, setResult) => {
   for (let i = 0; i < months; i += 1) {
     if (summ + taxPerYear < maxDeduction) {
       summ += taxPerYear;
-      result.push(taxPerYear);
+      result.push(Math.round(taxPerYear));
     } else {
-      result.push(maxDeduction - summ);
+      result.push(Math.round(maxDeduction - summ));
     }
   }
 
-  console.log('зп за год', sallaryPerYear);
-  console.log('максимальный налог', taxPerYear);
-  console.log('в месяц ', maxDeduction / taxPerYear);
-  console.log('итог ', result);
-
-  setResult({ ...params, calculated: result });
+  setResult({ ...params, validate: true, calculated: result });
 };

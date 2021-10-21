@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Field from 'components/Field';
 import { DefaultButton, TextButton } from 'components/Buttons';
 import TaxOptions from '../TaxOptions';
@@ -9,6 +9,7 @@ const TaxBody = () => {
   const [activeParam, setActiveParam] = useState(0);
   const [calculatedParamas, setCalculatedParamas] = useState({
     value: null,
+    validate: true,
     calculated: null
   });
 
@@ -16,9 +17,12 @@ const TaxBody = () => {
     setCalculatedParamas({ ...calculatedParamas, value: e.target.value });
   };
   const calculateTax = () => {
-    if (calculatedParamas.value > 0) calculate(calculatedParamas, setCalculatedParamas);
+    if (calculatedParamas.value && calculatedParamas.value >= 12130) {
+      calculate(calculatedParamas, setCalculatedParamas);
+    } else {
+      setCalculatedParamas({ ...calculatedParamas, validate: false });
+    }
   };
-
   return (
     <div className="taxDeduction__body">
       <h3 className="taxDeduction__title">Налоговый вычет</h3>
@@ -29,16 +33,20 @@ const TaxBody = () => {
       <div className="taxDeduction__form">
         <Field
           name="summ"
+          type="number"
           label="Ваша зарплата в месяц"
           className="taxDeduction__field"
           placeholder="Введите данные"
           value={calculatedParamas.value || ''}
           onChange={handleSetFieldValue}
+          error={!calculatedParamas.validate}
         />
         <TextButton className="taxDeduction__calculate" onClick={calculateTax}>
           Рассчитать
         </TextButton>
-        {calculatedParamas.calculated > 0 && <TaxOptions options={calculatedParamas.calculated} />}
+        {calculatedParamas.calculated?.length && (
+          <TaxOptions options={calculatedParamas.calculated} />
+        )}
         <TaxParams active={activeParam} setActiveParam={setActiveParam} />
         <DefaultButton className="taxDeduction__submit">Добавить</DefaultButton>
       </div>
