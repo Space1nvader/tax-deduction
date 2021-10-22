@@ -5,23 +5,24 @@
   &__Content {
     opacity: 0;
     animation: fadeIn 0.2s forwards;
-    min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
     background-color: #ffffff;
+    border: none !important; //lib overwrite
     position: relative !important; //lib overwrite
-    padding: 2rem 1rem !important; //lib overwrite
+    padding: 0 !important; //lib overwrite
     inset: 0 !important; //lib overwrite;
     margin: 0 auto;
   }
   &__body {
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
   }
   &__close {
+    z-index: 1;
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 16px;
   }
 }
 
@@ -35,17 +36,11 @@
       height: fit-content;
       width: 28.375rem;
       max-width: 100%;
-      padding: 2rem !important; //lib overwrite
       border-radius: 30px !important; //lib overwrite
-    }
-    &__close {
-      position: absolute;
-      top: 16px;
-      right: 12px;
     }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .ReactModal {
     &__Content {
       width: 34.5rem;

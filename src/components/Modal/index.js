@@ -11,7 +11,7 @@ const Modal = (props) => {
   return (
     <ReactModal isOpen={modalOpen} onRequestClose={handleClose} style={coreStyle}>
       <CloseButton className="ReactModal__close" onClick={handleClose} />
-      <div className="ReactModal__body">{children}</div>
+      {children}
     </ReactModal>
   );
 };

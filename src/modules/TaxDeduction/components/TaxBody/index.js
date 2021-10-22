@@ -12,9 +12,8 @@ const TaxBody = () => {
     validate: true,
     calculated: null
   });
-
-  const handleSetFieldValue = (e) => {
-    setCalculatedParamas({ ...calculatedParamas, value: e.target.value });
+  const handleSetFieldValue = (value) => {
+    setCalculatedParamas({ ...calculatedParamas, value });
   };
   const calculateTax = () => {
     if (calculatedParamas.value && calculatedParamas.value >= 12130) {
@@ -37,9 +36,9 @@ const TaxBody = () => {
           label="Ваша зарплата в месяц"
           className="taxDeduction__field"
           placeholder="Введите данные"
-          value={calculatedParamas.value || ''}
           onChange={handleSetFieldValue}
           error={!calculatedParamas.validate}
+          autoComplete="off"
         />
         <TextButton className="taxDeduction__calculate" onClick={calculateTax}>
           Рассчитать

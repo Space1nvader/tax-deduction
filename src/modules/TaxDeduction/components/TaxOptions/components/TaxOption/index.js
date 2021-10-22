@@ -9,7 +9,7 @@ const TaxOption = (props) => {
     if (count === 1 || count === 4 || count === 5 || count >= 9) {
       return `в ${count}-ый год`;
       // eslint-disable-next-line
-    } else if (count === 2 || (count >= 7 && count <= 8)) {
+    } else if (count === 2 || (count >= 6 && count <= 8)) {
       return `в ${count}-ой год`;
     } else {
       return `в ${count}-ий год`;
