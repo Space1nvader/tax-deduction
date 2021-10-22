@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import './index.scss';
 
@@ -17,8 +17,10 @@ const Field = (props) => {
   const [fieldValue, setFieldValue] = useState(null);
   const handleChangeFieldValue = (e) => {
     setFieldValue(e.target.value);
-    if (onChange) onChange(e.target.value);
   };
+  useEffect(() => {
+    if (onChange) onChange(fieldValue);
+  }, [fieldValue]);
   return (
     <div className="field">
       <label className="field__label" htmlFor={name}>
