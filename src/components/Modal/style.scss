@@ -1,10 +1,10 @@
 .ReactModal {
   &__Overlay {
     overflow: auto;
-  }
-  &__Content {
     opacity: 0;
     animation: fadeIn 0.2s forwards;
+  }
+  &__Content {
     width: 100%;
     box-sizing: border-box;
     background-color: #ffffff;

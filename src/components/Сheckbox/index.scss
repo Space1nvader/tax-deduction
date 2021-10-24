@@ -12,7 +12,7 @@
   }
   &__label {
     position: relative;
-    display: block;
+    display: inline-block;
     cursor: pointer;
     padding-left: 2rem;
     z-index: 1;
@@ -29,6 +29,7 @@
     }
     &::after {
       z-index: 1;
+      transition: border-color 0.2s;
       border: 1px solid var(--border);
       background-image: url(../../assets/icons/checked-icon.svg);
       background-position: center center;
@@ -41,6 +42,9 @@
       background: var(--main-gradient);
       transition: opacity 0.1s;
       opacity: 0;
+    }
+    &:hover::after {
+      border-color: var(--default);
     }
   }
 }

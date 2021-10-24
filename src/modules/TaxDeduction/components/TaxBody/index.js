@@ -32,7 +32,6 @@ const TaxBody = () => {
       <div className="taxDeduction__form">
         <Field
           name="summ"
-          type="number"
           label="Ваша зарплата в месяц"
           className="taxDeduction__field"
           placeholder="Введите данные"
