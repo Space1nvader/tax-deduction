@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
-import NumberFormat from 'react-number-format';
 import CurrencyInput from 'react-currency-input-field';
 import './index.scss';
 
