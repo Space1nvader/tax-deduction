@@ -10,9 +10,7 @@ const TaxOptions = ({ options }) => (
     <div className="taxOptions__checklist">
       {options.map((option, i) => (
         // eslint-disable-next-line
-        <TaxOption key={`option-${i}`} index={i}>
-          {option}
-        </TaxOption>
+        <TaxOption key={`option-${i}`} index={i} value={option} />
       ))}
     </div>
   </div>
