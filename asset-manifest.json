@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tax-deduction/static/css/main.f07248a7.chunk.css",
-    "main.js": "/tax-deduction/static/js/main.64c0dc85.chunk.js",
-    "main.js.map": "/tax-deduction/static/js/main.64c0dc85.chunk.js.map",
+    "main.css": "/tax-deduction/static/css/main.cd733907.chunk.css",
+    "main.js": "/tax-deduction/static/js/main.4ffdb3c1.chunk.js",
+    "main.js.map": "/tax-deduction/static/js/main.4ffdb3c1.chunk.js.map",
     "runtime-main.js": "/tax-deduction/static/js/runtime-main.01200e88.js",
     "runtime-main.js.map": "/tax-deduction/static/js/runtime-main.01200e88.js.map",
     "static/js/2.ee5842b4.chunk.js": "/tax-deduction/static/js/2.ee5842b4.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.f7d5db6d.chunk.js": "/tax-deduction/static/js/3.f7d5db6d.chunk.js",
     "static/js/3.f7d5db6d.chunk.js.map": "/tax-deduction/static/js/3.f7d5db6d.chunk.js.map",
     "index.html": "/tax-deduction/index.html",
-    "static/css/main.f07248a7.chunk.css.map": "/tax-deduction/static/css/main.f07248a7.chunk.css.map",
+    "static/css/main.cd733907.chunk.css.map": "/tax-deduction/static/css/main.cd733907.chunk.css.map",
     "static/js/2.ee5842b4.chunk.js.LICENSE.txt": "/tax-deduction/static/js/2.ee5842b4.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/tax-deduction/static/media/LabGrotesqueMono.e3564b10.eot",
     "static/media/index.scss": "/tax-deduction/static/media/checked-icon.db42bbfd.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.01200e88.js",
     "static/js/2.ee5842b4.chunk.js",
-    "static/css/main.f07248a7.chunk.css",
-    "static/js/main.64c0dc85.chunk.js"
+    "static/css/main.cd733907.chunk.css",
+    "static/js/main.4ffdb3c1.chunk.js"
   ]
 }
