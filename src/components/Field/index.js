@@ -2,13 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import NumberFormat from 'react-number-format';
+import CurrencyInput from 'react-currency-input-field';
 import './index.scss';
 
 const Field = (props) => {
-  const { name, label = '', placeholder = '', error, onChange, className = '', ...other } = props;
+  const { name, label = '', error, onChange, className = '', ...other } = props;
   const [fieldValue, setFieldValue] = useState(null);
-  const handleChangeFieldValue = ({ target }) => {
-    setFieldValue(parseFloat(target.value));
+  const handleChangeFieldValue = (value) => {
+    setFieldValue(parseFloat(value));
   };
 
   useEffect(() => {
@@ -17,22 +18,23 @@ const Field = (props) => {
   }, [fieldValue]);
   return (
     <div className="field">
-      <label className="field__label" htmlFor={name}>
-        {label}
-      </label>
-      <NumberFormat
+      {label && (
+        <label className="field__label" htmlFor={name}>
+          {label}
+        </label>
+      )}
+      <CurrencyInput
         name={name}
         id={name}
         className={clsx('field__input', className, error && 'error')}
-        onChange={handleChangeFieldValue}
-        value={fieldValue || ''}
-        displayType="input"
-        inputMode="numeric"
-        placeholder={placeholder}
         suffix=" ₽"
+        step={1000}
+        allowDecimals={false}
+        allowNegativeValue={false}
+        value={fieldValue || ''}
+        onValueChange={handleChangeFieldValue}
         {...other}
       />
-
       <label htmlFor={name} className="field__error">
         Значение должно быть больше 12 130
       </label>
