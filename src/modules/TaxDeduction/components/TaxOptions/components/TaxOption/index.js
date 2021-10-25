@@ -26,7 +26,7 @@ const TaxOption = (props) => {
   return (
     <div className="taxOption">
       <Checkbox name={`option-${index}`}>
-        <span className="taxOption__value">{generateFormatValue(value)} рублей </span>
+        <span className="taxOption__value">{generateFormatValue(value)} </span>
         <span className="taxOption__info">{generateDeclination()}</span>
       </Checkbox>
     </div>
