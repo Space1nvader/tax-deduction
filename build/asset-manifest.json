@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.88a5ec1b.chunk.css",
-    "main.js": "/static/js/main.c57a32b1.chunk.js",
-    "main.js.map": "/static/js/main.c57a32b1.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.aab1eede.js",
-    "runtime-main.js.map": "/static/js/runtime-main.aab1eede.js.map",
-    "static/js/2.570b4e62.chunk.js": "/static/js/2.570b4e62.chunk.js",
-    "static/js/2.570b4e62.chunk.js.map": "/static/js/2.570b4e62.chunk.js.map",
-    "static/js/3.a816443e.chunk.js": "/static/js/3.a816443e.chunk.js",
-    "static/js/3.a816443e.chunk.js.map": "/static/js/3.a816443e.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.88a5ec1b.chunk.css.map": "/static/css/main.88a5ec1b.chunk.css.map",
-    "static/js/2.570b4e62.chunk.js.LICENSE.txt": "/static/js/2.570b4e62.chunk.js.LICENSE.txt",
-    "static/media/style.scss": "/static/media/LabGrotesqueMono.e3564b10.eot",
-    "static/media/index.scss": "/static/media/checked-icon.db42bbfd.svg"
+    "main.css": "/tax-deduction/static/css/main.532d3212.chunk.css",
+    "main.js": "/tax-deduction/static/js/main.b11fdd5a.chunk.js",
+    "main.js.map": "/tax-deduction/static/js/main.b11fdd5a.chunk.js.map",
+    "runtime-main.js": "/tax-deduction/static/js/runtime-main.01200e88.js",
+    "runtime-main.js.map": "/tax-deduction/static/js/runtime-main.01200e88.js.map",
+    "static/js/2.c093f97e.chunk.js": "/tax-deduction/static/js/2.c093f97e.chunk.js",
+    "static/js/2.c093f97e.chunk.js.map": "/tax-deduction/static/js/2.c093f97e.chunk.js.map",
+    "static/js/3.f7d5db6d.chunk.js": "/tax-deduction/static/js/3.f7d5db6d.chunk.js",
+    "static/js/3.f7d5db6d.chunk.js.map": "/tax-deduction/static/js/3.f7d5db6d.chunk.js.map",
+    "index.html": "/tax-deduction/index.html",
+    "static/css/main.532d3212.chunk.css.map": "/tax-deduction/static/css/main.532d3212.chunk.css.map",
+    "static/js/2.c093f97e.chunk.js.LICENSE.txt": "/tax-deduction/static/js/2.c093f97e.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/tax-deduction/static/media/LabGrotesqueMono.e3564b10.eot",
+    "static/media/index.scss": "/tax-deduction/static/media/checked-icon.62a8ceae.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.aab1eede.js",
-    "static/js/2.570b4e62.chunk.js",
-    "static/css/main.88a5ec1b.chunk.css",
-    "static/js/main.c57a32b1.chunk.js"
+    "static/js/runtime-main.01200e88.js",
+    "static/js/2.c093f97e.chunk.js",
+    "static/css/main.532d3212.chunk.css",
+    "static/js/main.b11fdd5a.chunk.js"
   ]
 }
