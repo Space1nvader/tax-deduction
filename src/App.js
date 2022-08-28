@@ -1,11 +1,21 @@
-import React from 'react';
-import TaxDeduction from 'modules/TaxDeduction/index';
-import 'assets/style/style.scss';
+import React, {useState} from 'react';
+import MyModal from './components/MyModal';
+import './App.css';
 
-const App = () => (
-  <main className="main">
-    <TaxDeduction />
-  </main>
-);
+function App() {
+  const [modal, setModal] = useState(false)
+  const closeModal = () => {
+    setModal(false)
+  }
+  return (
+    <div className="App">
+      {
+        modal
+        ? <MyModal props={closeModal}/>
+        : <button onClick={()=>setModal(true)} className='button'>Налоговый вычет</button>
+      }
+    </div>
+  );
+}
 
 export default App;
